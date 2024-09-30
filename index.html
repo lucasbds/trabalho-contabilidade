@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Contábil</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema Contábil</h1>
+        <nav>
+	    <link rel="stylesheet" href="css/styles.css">
+            <a href="#lancamentos">Lançamentos</a>
+            <a href="#balancete">Balancete</a>
+            <a href="#dre">DRE</a>
+        </nav>
+    </header>
+
+    <section id="lancamentos">
+      <center>
+        <h2>Lançamentos Contábeis</h2>
+        <form id="lancamentoForm">
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+            
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" required>
+            
+            <label for="debito">Conta Débito:</label>
+            <input type="number"  id="debito" required>
+            
+            <label for="credito">Conta Crédito:</label>
+            <input type="number" id="credito" required>
+            
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" required>
+            
+            <button type="submit">Salvar Lançamento</button>
+        </form>
+      </center>
+    </section>
+<center>
+    <section id="balancete">
+        <h2>Balancete</h2>
+        <div id="balanceteOutput"></div>
+    </section>
+
+    <section id="dre">
+        <h2>Demonstração do Resultado</h2>
+        <div id="dreOutput"></div>
+    </section>
+  </center>
+    <footer>
+      <center> 
+        <p>&copy; Evellin Silva, Lucas Cardoso e Lucas Rodrigues </p></center>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
